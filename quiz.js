@@ -36,7 +36,30 @@ isMyAgeAndExpEnough(22,1)
 isMyAgeAndExpEnough(35,1)
 =>"you need more exp"
 */
+function isMyAgeAndExpEnough(MyAge,ExpEnough){
+    if (MyAge >=25&&MyAge<=30 &&ExpEnough>=5){
+        return ("you are awesome")
+    }
+    if(MyAge>=30&&ExpEnough>=5){
+        return ("you are goood")
+    }
+    if(MyAge>=25&&ExpEnough<=5&&ExpEnough>=2){
+        return ("dont worry you need to work on your self more ")
+    }
+    if(MyAge<=24){
+        return ("you still young")
+    }
+    if(ExpEnough<=2){
+        return ("you need more exp")
+    }
 
+    isMyAgeAndExpEnough(MyAge,ExpEnough)
+
+
+
+
+
+}
 
 
 
@@ -66,6 +89,15 @@ countDown(7)
 
 
 */
+
+function countDown(c){
+    if(c===1){
+        return (c + ' ,' + "done")
+    }
+    return ( c +","+countDown(c-1))
+
+
+}
 
 
 
